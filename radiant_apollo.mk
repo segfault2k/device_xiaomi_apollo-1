@@ -11,14 +11,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from apollo device
 $(call inherit-product, device/xiaomi/apollo/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common ProjectRadiant stuff.
+$(call inherit-product, vendor/radiant/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_apollo
+PRODUCT_NAME := radiant_apollo
 PRODUCT_DEVICE := apollo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 10T
+
+# Project Radiant Properties
+TARGET_BOOT_ANIMATION_RES := 1080
+RADIANT_BUILD_TYPE := OFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED := true
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.nezuko.cpu=SDM865
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

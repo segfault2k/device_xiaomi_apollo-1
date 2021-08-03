@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_apollo.mk
+    $(LOCAL_DIR)/radiant_apollo.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_apollo-user \
-    lineage_apollo-userdebug \
-    lineage_apollo-eng
+    radiant_apollo-user \
+    radiant_apollo-userdebug \
+    radiant_apollo-eng
