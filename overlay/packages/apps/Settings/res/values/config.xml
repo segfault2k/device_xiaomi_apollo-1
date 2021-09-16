@@ -21,4 +21,10 @@
     <!-- Whether to show min/max refresh rate in display settings -->
     <bool name="config_show_refresh_rate_controls">true</bool>
 
+    <!-- Smart Charging -->
+    <bool name="config_smartChargingAvailable">false</bool>
+
+    <!-- Battery Health enable -->
+    <bool name="config_supportBatteryHealth">false</bool>
+
 </resources>
