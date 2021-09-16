@@ -11,10 +11,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from apollo device
 $(call inherit-product, device/xiaomi/apollo/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common CherishOS stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_apollo
+# GApps
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
+WITH_GMS := true
+
+#CherishOS Stuff
+CHERISH_BUILD_TYPE := OFFICIAL
+PRODUCT_GENERIC_PROPERTIES += \
+    ro.cherish.maintainer=sewa2k
+
+#Blur
+TARGET_USES_BLUR := true
+
+PRODUCT_NAME := cherish_apollo
 PRODUCT_DEVICE := apollo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
