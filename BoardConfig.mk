@@ -103,7 +103,7 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_USE_LATEST_CLANG := true
 TARGET_KERNEL_ADDITIONAL_FLAGS += LD=ld.lld AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
 TARGET_KERNEL_CLANG_VERSION := r428724
-TARGET_KERNEL_CONFIG := vendor/apollo_defconfig
+TARGET_KERNEL_CONFIG := vendor/arrow_apollo_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
 
 # NFC
